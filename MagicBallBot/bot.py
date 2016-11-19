@@ -12,7 +12,6 @@ list_items = []
 for a in range (1,21):
     core = db.select_single(a)
     list_items.append(core)
-print(list_items)
 @bot.message_handler(func=lambda message: True, content_types=['text'])
 def otveti(message):
 
